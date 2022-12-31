@@ -1,0 +1,24 @@
+🥀 Contact Manager App - React JS 🥀
+
+🌿🥀🌳 Points to Remember 🌳🥀🌿
+
+#1. 
+#2. 
+
+🌿🍃🌳🔥🥀 Detailed Explaination of Important Points - Connect the Dots 🥀🔥🌳🍃🌿
+
+✅#A. Prerequisites - Node JS, NPM, NPX & along with Versions.
+✅#B. Create a React App - npx create-react-app command & run the app - default development environment - localhost:3000.
+✅#C. React Scripts/Commands - npm start, npm run build, npm test & npm run eject.
+✅#D. Explore the App - Files & Folders Structure.
+✅#E. Clean up the App - Files & Folders Structure.
+✅#F. Create a Directory of Components & Build them.
+✅#G. Create a Directory of Assets which includes Images.
+✅#H. Create the multiple Components as per the App Layout - Header < AddContact < ContactList < ContactCard.
+✅#I. Render the "Hello World" in Default App Component.
+✅#J. Install & Configure the Material UI Library on place of Semantic UI Library.
+✅#K. What is React Component?
+
+🔥🥀 Detailed Explaination of Important Notes 🥀🔥
+
+✅#B. 
