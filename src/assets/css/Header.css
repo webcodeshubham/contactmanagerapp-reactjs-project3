@@ -1,0 +1,30 @@
+/* Default Styling */
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+/* Header Stylings */
+
+.header {
+  text-align: left;
+  font-size: 1.2vw;
+  font-family: Impact, Haettenschweiler, "Arial Narrow Bold", sans-serif;
+  letter-spacing: 1px;
+  color: cadetblue;
+  padding: 1.5vw;
+  /* border: 3px groove silver; */
+  background-color: black;
+  box-shadow: 0 0 20px black;
+  margin-bottom: 30px;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+}
+
+.header__brandLogo {
+  margin-right: 1vw;
+  object-fit: contain;
+  width: 4vw;
+}

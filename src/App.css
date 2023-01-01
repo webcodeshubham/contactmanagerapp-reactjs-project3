@@ -1,0 +1,13 @@
+/* Default Styling */
+
+* {
+    margin: 0;
+    padding: 0;
+  }
+  
+  /* App Stylings */
+
+  .app {
+    /* background-color: black; */
+    /* color: white; */
+  }

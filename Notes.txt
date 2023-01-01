@@ -7,18 +7,20 @@
 
 🌿🍃🌳🔥🥀 Detailed Explaination of Important Points - Connect the Dots 🥀🔥🌳🍃🌿
 
-✅#A. Prerequisites - Node JS, NPM, NPX & along with Versions.
-✅#B. Create a React App - npx create-react-app command & run the app - default development environment - localhost:3000.
-✅#C. React Scripts/Commands - npm start, npm run build, npm test & npm run eject.
-✅#D. Explore the App - Files & Folders Structure.
-✅#E. Clean up the App - Files & Folders Structure.
-✅#F. Create a Directory of Components & Build them.
-✅#G. Create a Directory of Assets which includes Images.
-✅#H. Create the multiple Components as per the App Layout - Header < AddContact < ContactList < ContactCard.
-✅#I. Render the "Hello World" in Default App Component.
-✅#J. Install & Configure the Material UI Library on place of Semantic UI Library.
-✅#K. What is React Component?
-
-🔥🥀 Detailed Explaination of Important Notes 🥀🔥
-
-✅#B. 
+✅#1. Prerequisites - Node JS, NPM, NPX & along with Versions.
+✅#2. Create a React App - npx create-react-app command & run the app - default development environment - localhost:3000.
+✅#3. React Scripts/Commands - npm start, npm run build, npm test & npm run eject.
+✅#4. Explore the App - Files & Folders Structure.
+✅#5. Clean up the App - Files & Folders Structure.
+✅#6. Create a Directory of Components & Build them.
+✅#7. Create a Directory of Assets which includes Images.
+✅#8. Create the multiple Components as per the App Layout - Header < AddContact < ContactList < ContactCard.
+✅#9. Render the "Hello World" in Default App Component.
+✅#10. Install & Configure the Material UI Library on place of Semantic UI Library.
+✅#11. React Component - Individual piece of reusable code which has it's own functionality, inputs and outputs.
+✅#12. React:- You can't write HTML in JS File, it's JSX (HTML + JS) in the JS Component.
+✅#13. App - Create the multiple Components as per the App Layout - Header < AddContact < ContactList < ContactCard.
+✅#14. Design & Build your Header Functional Component with or without Material UI.
+✅#15. Design & Build your AddContact as Component with or without Material UI.
+✅#16. Design & Build your AddContact as Class Component with or without Material UI.
+✅#17. Design & Build your ContactList as Component with or without Material UI.
