@@ -1,0 +1,23 @@
+/* Default Styling */
+
+* {
+    margin: 0;
+    padding: 0;
+  }
+  
+  /* Contact List Stylings */
+
+  .contactList {
+    padding: 0.2vw 2vw;
+  }
+  
+  .contactList__title {
+    font-size: 2.6vw;
+    font-family: Impact, Haettenschweiler, "Arial Narrow Bold", sans-serif;
+    color: cadetblue;
+  }
+
+.contactList__container {
+    margin: 1vw 2vw;
+}
+

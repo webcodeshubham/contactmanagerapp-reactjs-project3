@@ -2,8 +2,8 @@
 
 🌿🥀🌳 Points to Remember 🌳🥀🌿
 
-#1. 
-#2. 
+#1. Array of Objects gets stored inside an Props Object at two Levels.
+#2. Reference Variable in JSX.
 
 🌿🍃🌳🔥🥀 Detailed Explaination of Important Points - Connect the Dots 🥀🔥🌳🍃🌿
 
@@ -24,3 +24,6 @@
 ✅#15. Design & Build your AddContact as Component with or without Material UI.
 ✅#16. Design & Build your AddContact as Class Component with or without Material UI.
 ✅#17. Design & Build your ContactList as Component with or without Material UI.
+✅#18. React Rendering List Items/Elements of Objects using Map Array Iterative Methods, Array Destructing, Props Objects.
+==> Case 1:- Static Array of Objects in Main Container Component and pass it to child Component.
+✅#18. As UI is Design & Build your ContactCard as Component with or without Material UI.
