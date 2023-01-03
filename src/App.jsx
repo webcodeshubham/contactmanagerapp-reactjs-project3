@@ -70,7 +70,7 @@ const App = () => {
     // StackOverflow Error1 :- https://stackoverflow.com/questions/74993574/localstorage-getitem-method-is-not-retrieving-data
     // All useEffects are run for one time at the time of rendering. So initially your contacts state is [] and you are storing it into localStorage. So to solve it, try adding simple if check while storing into localStorage.
     // https://upmostly.com/tutorials/why-is-my-useeffect-hook-running-twice-in-react
-
+    
     if (contacts.length) {
       // Only store if contacts is not empty
       localStorage.setItem(LOCAL_STORAGE_KEY, JSON.stringify(contacts));
