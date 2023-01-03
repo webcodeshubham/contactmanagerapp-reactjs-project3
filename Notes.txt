@@ -61,33 +61,33 @@
 
 ✅#21. How to Add Images in the JSX Component.
 
+✅🔥⭐️#22. Build the functionality after Setup, Layout & Styling of Components.
 
+✅#23. In order to replace the StaticArrayofObjects, we need to declare the state to store the the objects inside the state array as CONTACTS & will be set using Setter Function of setCONTACTS using React useState Hook.
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-✅#21. How the Add Images in the JSX Component.
-✅#22. Build the functionality after Setup, Layout & Styling of Components.
-✅#23. Fill & Store the Object Array Values in the Contacts State Variable.
 ✅#24. Create the State inside the ContactList Class Component to store the name and email of the contact.
-✅#24. Passing Data to the App Component, where Finction as a Props object.
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+✅#24. Passing Data to the App Component, where Function as a Props object.
 ✅#25. UseEffect => How to persist the Data inside the Component using localStorage.

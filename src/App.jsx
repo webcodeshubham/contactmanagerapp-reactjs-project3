@@ -35,7 +35,7 @@ import ContactList from "./components/ContactList";
 
 const App = () => {
   const LOCAL_STORAGE_KEY = "contacts";
-  // Dynamic Contact Array of Objects
+  // Dynamic Contact Array of Objects with initial value as an empty array.
   const [contacts, setContacts] = useState([]);
 
   const addContacthandler = (contact) => {
