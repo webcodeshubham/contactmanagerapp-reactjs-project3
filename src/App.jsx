@@ -67,7 +67,14 @@ const App = () => {
   useEffect(() => {
     // set all contacts objects into the key/variable (LOCAL_STORAGE_KEY) of the localStorage & database/browser memory.
     // The JSON.stringify() static method converts a JavaScript value to a JSON string.
-    localStorage.setItem(LOCAL_STORAGE_KEY, JSON.stringify(contacts));
+    // StackOverflow Error1 :- https://stackoverflow.com/questions/74993574/localstorage-getitem-method-is-not-retrieving-data
+    // All useEffects are run for one time at the time of rendering. So initially your contacts state is [] and you are storing it into localStorage. So to solve it, try adding simple if check while storing into localStorage.
+    // https://upmostly.com/tutorials/why-is-my-useeffect-hook-running-twice-in-react
+
+    if (contacts.length) {
+      // Only store if contacts is not empty
+      localStorage.setItem(LOCAL_STORAGE_KEY, JSON.stringify(contacts));
+    }
   }, [contacts]);
 
   // Use the parathesis () wrapper to wrap the JSX inside the Component, if returning from than one JSX Element.
@@ -79,7 +86,7 @@ const App = () => {
         <Header />
 
         {/* Error:- You likely to forgot to export your component file it's defined in, or you might have mixed up named or default component. You can't call the Component, if you haven't created them. */}
-        <AddContact addContacthandler={addContactHandler} />
+        <AddContact addContactHandler={addContactHandler} />
 
         {/* Passing the Array of Object and assigning it to Object Prop Variable */}
 
