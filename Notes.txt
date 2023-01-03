@@ -59,6 +59,7 @@
 
 ✅#20. Add the Inline Styling as an object/attribute of style in {{ property: value }} in React or Create the Styling for Each Component.
 
+✅#21. How to Add Images in the JSX Component.
 
 
 
