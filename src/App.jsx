@@ -34,6 +34,7 @@ import ContactList from "./components/ContactList";
 // ];
 
 const App = () => {
+  // Setting a key/variable to get the data from the localStorage.
   const LOCAL_STORAGE_KEY = "contacts";
   // Dynamic Contact Array of Objects with initial value as an empty array.
   const [contacts, setContacts] = useState([]);
@@ -49,14 +50,21 @@ const App = () => {
     setContacts([...contacts, contact]);
   };
 
+  // run the function snippet, when this hook runs, &whenever dependency array changes.
   useEffect(() => {
+    // Use the JavaScript function JSON.parse() to convert text into a JavaScript object: const obj = JSON.parse('{"name":"John", "age":30, "city":"New York"}'); Make sure the text is in JSON format, or else you will get a syntax error.
     const retrieveContacts = JSON.parse(
+      // get all contacts objects from the localStorage database/browser memory.
       localStorage.getItem(LOCAL_STORAGE_KEY)
     );
+    // if the data exits in the localStorage database, then set the contacts objects to contacts state variable.
     if (retrieveContacts) setContacts(retrieveContacts);
   }, []);
 
+  // run the function snippet, when this hook runs, &whenever dependency array changes.
   useEffect(() => {
+    // set all contacts objects into the key/variable (LOCAL_STORAGE_KEY) of the localStorage & database/browser memory.
+    // The JSON.stringify() static method converts a JavaScript value to a JSON string.
     localStorage.setItem(LOCAL_STORAGE_KEY, JSON.stringify(contacts));
   }, [contacts]);
 

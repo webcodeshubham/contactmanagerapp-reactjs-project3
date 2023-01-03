@@ -4,6 +4,7 @@
 
 #1. Array of Objects gets stored inside an Props Object at two Levels.
 #2. Reference Variable in JSX.
+#3. You can check the localStorage data inside the chrome developer tools of Application > Storage.
 
 🌿🍃🌳🔥🥀 Detailed Explaination of Important Points - Connect the Dots 🥀🔥🌳🍃🌿
 
@@ -55,7 +56,7 @@
 🥀 Declaring Class State in Class Component.
 🥀 Add the Event Handlers with Callback Functions as Onchange (Input) & OnSubmit (Form).
 
-🔥#3. ==> Case 3:- Now, In order to persist the data, even if the page reloads or new session started. 
+🔥#3. ==> Case 3:- Now, In order to persist the data, even if the page reloads or new session started. we will use the browser localStorage Memory along with useEffect Hook which is having dependency array as contacts.
 
 ✅#19. As UI of CardContact is repetative, so Design & Build your ContactCard as Component Separately with or without Material UI.
 
@@ -71,4 +72,6 @@
 
 ✅#25. In order to pass the state from child to parent component, then must function as a prop must be passed from parent to child component. This Function as a Prop must be called inside the add function of AddContact Component.
 
-✅#26. UseEffect => How to persist the Data inside the Component using localStorage.
+✅#26. LocalStorage & UseEffect => Now, In order to persist the data, even if the page reloads or new session started. we will use the browser localStorage Memory along with useEffect Hook which is having dependency array as contacts.
+
+✅🔥⭐️#27. 
