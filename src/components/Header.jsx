@@ -6,7 +6,7 @@ import brandLogo from "../assets/img/brand-logo.png";
 const Header = () => {
   return (
     <>
-      {/* JSX vs. HTML => className & class */}
+      {/* JSX vs. HTML => className & class (OOPs in JavaScript) */}
       <header className="header">
         <img className="header__brandLogo" src={brandLogo} alt="brand-logo" />
         <h1>Contact Manager App</h1>

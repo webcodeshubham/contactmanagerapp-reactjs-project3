@@ -7,23 +7,86 @@
 
 🌿🍃🌳🔥🥀 Detailed Explaination of Important Points - Connect the Dots 🥀🔥🌳🍃🌿
 
-✅#1. Prerequisites - Node JS, NPM, NPX & along with Versions.
-✅#2. Create a React App - npx create-react-app command & run the app - default development environment - localhost:3000.
-✅#3. React Scripts/Commands - npm start, npm run build, npm test & npm run eject.
+✅#1. Prerequisites - Install and Configure Node JS, NPM, NPX & along with Versions.
+
+✅#2. Create a React App - npx create-react-app command & run the app - default development server environment - localhost:3000.
+
+✅#3. React Scripts/Commands - npm start, npm run build (minified version - production deployment build), npm test (test cases) & npm run eject.
+
 ✅#4. Explore the App - Files & Folders Structure.
+
 ✅#5. Clean up the App - Files & Folders Structure.
+
 ✅#6. Create a Directory of Components & Build them.
-✅#7. Create a Directory of Assets which includes Images.
-✅#8. Create the multiple Components as per the App Layout - Header < AddContact < ContactList < ContactCard.
+
+✅#7. Create a Directory of Assets which includes Images/CSS/Other Static Files and Folders.
+
+✅#8. Create the multiple Components as per the App Layout ==> Header < AddContact < ContactList < ContactCard.
+
 ✅#9. Render the "Hello World" in Default App Component.
+
 ✅#10. Install & Configure the Material UI Library on place of Semantic UI Library.
+
 ✅#11. React Component - Individual piece of reusable code which has it's own functionality, inputs and outputs.
-✅#12. React:- You can't write HTML in JS File, it's JSX (HTML + JS) in the JS Component.
-✅#13. App - Create the multiple Components as per the App Layout - Header < AddContact < ContactList < ContactCard.
+
+✅#12. HTML vs. JSX:- You can't write HTML in JS File, it's JSX Syntax (HTML + JS) which means embedded { JS } in HTML in the JS Component.
+
+✅#13. React App Component - Create & Structure the multiple Components as per the App Layout - Header < AddContact < ContactList < ContactCard.
+
 ✅#14. Design & Build your Header Functional Component with or without Material UI.
-✅#15. Design & Build your AddContact as Component with or without Material UI.
-✅#16. Design & Build your AddContact as Class Component with or without Material UI.
-✅#17. Design & Build your ContactList as Component with or without Material UI.
-✅#18. React Rendering List Items/Elements of Objects using Map Array Iterative Methods, Array Destructing, Props Objects.
-==> Case 1:- Static Array of Objects in Main Container Component and pass it to child Component.
-✅#18. As UI is Design & Build your ContactCard as Component with or without Material UI.
+
+✅#15. Design & Build your AddContact Form as Class Component with or without Material UI.
+🔥#1. ==> Declare the class component state.
+🔥#2. ==> Add the Event Handlers with Callback Functions as Onchange (Input) & OnSubmit (Form).
+🔥#3. ==> Set the State of the State Object Keys using this.setState() method.
+
+✅#16. Design & Build your ContactList Functional Component with or without Material UI.
+
+✅#17. Style the App Component with or without Material UI.
+
+✅#18. React Rendering List Items/Elements of Array of Objects using Map Array Iterative Methods, Array Destructing, Props Objects.
+
+🔥#1. ==> Case 1:- Create a Static Array of 2, 3 Objects in Main App Container Component and pass it to child Component using Props Objects as Key/Attribute/Arguments/Property Name.
+🥀 This props is a default parameter name.
+🥀 props (object) = { contacts (key i.e. Array), __proto__ (key i.e. prototype object)}.
+🥀 Call the Reference Variable in JSX, will run the assigned function.
+
+🔥#2. ==> Case 2:- Dynamic Array of Objects in Main Container Component and pass it to child Component using useState Hook.
+
+🔥#3. ==> Case 3:- Dynamic Array of Objects in Main Container Component and Local Storage using useEffect Hook.
+
+✅#19. As UI of CardContact is repetative, so Design & Build your ContactCard as Component Separately with or without Material UI.
+
+✅#20. Add the Inline Styling as an object/attribute of style in {{ property: value }} in React or Create the Styling for Each Component.
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+✅#21. How the Add Images in the JSX Component.
+✅#22. Build the functionality after Setup, Layout & Styling of Components.
+✅#23. Fill & Store the Object Array Values in the Contacts State Variable.
+✅#24. Create the State inside the ContactList Class Component to store the name and email of the contact.
+✅#24. Passing Data to the App Component, where Finction as a Props object.
+✅#25. UseEffect => How to persist the Data inside the Component using localStorage.

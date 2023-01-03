@@ -9,7 +9,7 @@
 
 .header {
   text-align: left;
-  font-size: 1.2vw;
+  font-size: 1vw;
   font-family: Impact, Haettenschweiler, "Arial Narrow Bold", sans-serif;
   letter-spacing: 1px;
   color: cadetblue;
@@ -26,5 +26,5 @@
 .header__brandLogo {
   margin-right: 1vw;
   object-fit: contain;
-  width: 4vw;
+  width: 3vw;
 }

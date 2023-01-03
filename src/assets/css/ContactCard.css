@@ -5,4 +5,30 @@
   padding: 0;
 }
 
-/* Contact List Stylings */
+/* Contact Card Stylings */
+
+.contactCard {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border: 1px solid #ccc;
+  padding: 1.5rem;
+  border-radius: 4px;
+  margin-bottom: 1vw;
+  box-shadow: 1px 1px 10px rgba(134, 133, 133, 0.8);
+}
+.contactCard__contact {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.contactCard__delIcon img {
+  width: 1.5rem;
+  cursor: pointer;
+}
+
+.contactCard__userIcon {
+  width: 2.2rem;
+  margin-right: 1.5vw;
+}

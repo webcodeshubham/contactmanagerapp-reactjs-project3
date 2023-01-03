@@ -2,7 +2,9 @@ import React from "react";
 import "../assets/css/ContactList.css";
 import ContactCard from "./ContactCard";
 
-// const staticContactList = [
+// Reference Array of Objects for Contacts
+
+// const staticContactList/contacts = [
 //   {
 //     id: 1,
 //     name: "John Doe",
@@ -17,7 +19,18 @@ import ContactCard from "./ContactCard";
 
 const ContactList = (props) => {
   // console.log(props)
-  // console.log(props(In-built Object).staticContactList(Array Assigned to Varibale as Parameters/Arguments))
+
+  // console.log(props.staticContactList)
+  // #1. props ==> (In-built Object in every react component).
+  // #2. staticContactList ==> properties (props) --> KEYs --> (Args/Attributes) ==> staticContactList(Array Assigned to Varibale as Parameters/Arguments).
+
+  // function declared to render the contact array items i.e. contact objects.
+
+  // Array of Object  = props.staticContactList
+  // Array of Object  = props.contacts
+  // contact = { name: "", email: ""}
+
+  // ==> ContactCard Component is not defined
 
   // const renderContactList = props.staticContactList.map((contact) => {
   //   return (
@@ -29,10 +42,20 @@ const ContactList = (props) => {
   //   );
   // });
 
-  const renderContactList = props.staticContactList.map((contact) => {
+  // ==> ContactCard Component is defined
+
+  // const renderContactList = props.staticContactList.map((contact) => {
+  //   return (
+  //     <>
+  //       <ContactCard contact={contact}/>
+  //     </>
+  //   );
+  // });
+
+  const renderContactList = props.contacts.map((contact) => {
     return (
       <>
-        <ContactCard contact={contact}/>
+        <ContactCard contact={contact} />
       </>
     );
   });
