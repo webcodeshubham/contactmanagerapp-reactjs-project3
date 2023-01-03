@@ -42,7 +42,7 @@ const App = () => {
   // Passing FunctionHandler as a Prop Attribute to AddContact Component to fetch the class state.
   // this will run on line 69 and will take function as a prop handler into AddContact Component.
   // here contact alias as this.state.
-  const addContacthandler = (contact) => {
+  const addContactHandler = (contact) => {
     console.log(contact);
     // existing contact objects inside contacts (Arrayof Objects) and new one called from addContact component and spreading using spread operator inside contacts (Arrayof Objects).
     // ...NameofObject(ArrayofObjects)
@@ -58,7 +58,9 @@ const App = () => {
       localStorage.getItem(LOCAL_STORAGE_KEY)
     );
     // if the data exits in the localStorage database, then set the contacts objects to contacts state variable.
-    if (retrieveContacts) setContacts(retrieveContacts);
+    if (retrieveContacts) {
+      setContacts(retrieveContacts);
+    }
   }, []);
 
   // run the function snippet, when this hook runs, &whenever dependency array changes.
@@ -77,7 +79,7 @@ const App = () => {
         <Header />
 
         {/* Error:- You likely to forgot to export your component file it's defined in, or you might have mixed up named or default component. You can't call the Component, if you haven't created them. */}
-        <AddContact addContacthandler={addContacthandler} />
+        <AddContact addContacthandler={addContactHandler} />
 
         {/* Passing the Array of Object and assigning it to Object Prop Variable */}
 

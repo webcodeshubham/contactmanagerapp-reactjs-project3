@@ -23,7 +23,7 @@ class AddContact extends Component {
       return;
     }
     // you can call & access the function inside the function by this.props.nameofHandler(contact)
-    this.props.addContacthandler(this.state);
+    this.props.addContactHandler(this.state);
     // Debugging
     console.log(this.state);
     // Once added, please clear out the fields.

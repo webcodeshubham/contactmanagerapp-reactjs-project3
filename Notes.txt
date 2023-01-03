@@ -74,4 +74,6 @@
 
 ✅#26. LocalStorage & UseEffect => Now, In order to persist the data, even if the page reloads or new session started. we will use the browser localStorage Memory along with useEffect Hook which is having dependency array as contacts.
 
-✅🔥⭐️#27. 
+✅#27. Contact Delete Functionality.
+
+✅🔥⭐️#28. React-Router-DOM Module => 
