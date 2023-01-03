@@ -3,7 +3,7 @@ import React, { Component } from "react";
 import "../assets/css/AddContact.css";
 
 class AddContact extends Component {
-  // Using class state and setState
+  // Using class state object and setState Setter function
   state = {
     id: "",
     name: "",
@@ -12,8 +12,9 @@ class AddContact extends Component {
 
   // OnSubmit callback function
   // method declared without keyword in class component
+  // “e” is a short variable reference to an event object provided to the event handlers. The event object generally offers certain useful methods and properties that the event handlers can utilize. For instance, we will use the “which” property of the event handler to determine which event is triggered or target of the event to set the value.
   add = (e) => {
-    // run the function, don't load the page on submit
+    // when using a button, run the function, don't load the page on submit
     e.preventDefault();
     // if condition, either is empty, then run alert function
     // strict check === & OR || & AND && Operators.
@@ -21,8 +22,11 @@ class AddContact extends Component {
       alert("All fields are required!");
       return;
     }
-    // call & access the function inside the function
+    // you can call & access the function inside the function by this.props.nameofHandler(contact)
     this.props.addContacthandler(this.state);
+    // Debugging
+    console.log(this.state);
+    // Once added, please clear out the fields.
     this.setState({ name: "", email: "" });
   };
 
@@ -46,9 +50,11 @@ class AddContact extends Component {
                 placeholder="Enter your name"
                 name="name"
                 id="name"
-                // class object state item
+                // value assigment as class object state item
+                // Here, it refers to the class object.
                 value={this.state.name}
                 // when filling the input value filed, it will be set to the class state, then assigned to the value of the field as an object property.
+                // Here, it refers to the class object.
                 onChange={(e) => this.setState({ name: e.target.value })}
               />
             </div>
@@ -60,9 +66,11 @@ class AddContact extends Component {
                 placeholder="Enter your email"
                 name="email"
                 id="email"
-                // class object state item
+                // value assigment as class object state item
+                // Here, it refers to the class object.
                 value={this.state.email}
                 // when filling the input value filed, it will be set to the class state, then assigned to the value of the field as an object property.
+                // Here, it refers to the class object.
                 onChange={(e) => this.setState({ email: e.target.value })}
               />
             </div>

@@ -38,8 +38,14 @@ const App = () => {
   // Dynamic Contact Array of Objects with initial value as an empty array.
   const [contacts, setContacts] = useState([]);
 
+  // Passing FunctionHandler as a Prop Attribute to AddContact Component to fetch the class state.
+  // this will run on line 69 and will take function as a prop handler into AddContact Component.
+  // here contact alias as this.state.
   const addContacthandler = (contact) => {
     console.log(contact);
+    // existing contact objects inside contacts (Arrayof Objects) and new one called from addContact component and spreading using spread operator inside contacts (Arrayof Objects).
+    // ...NameofObject(ArrayofObjects)
+    // ...contacts = contactObject1, contactObject2, contactObject3,... & also new contact object.
     setContacts([...contacts, contact]);
   };
 

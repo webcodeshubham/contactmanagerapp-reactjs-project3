@@ -51,9 +51,11 @@
 🥀 props (object) = { contacts (key i.e. Array), __proto__ (key i.e. prototype object)}.
 🥀 Call the Reference Variable in JSX, will run the assigned function.
 
-🔥#2. ==> Case 2:- Dynamic Array of Objects in Main Container Component and pass it to child Component using useState Hook.
+🔥#2. ==> Case 2:- Populate the Contacts State (ArrayofObjects) via AddContact Class Component State and its Events and Functionality.
+🥀 Declaring Class State in Class Component.
+🥀 Add the Event Handlers with Callback Functions as Onchange (Input) & OnSubmit (Form).
 
-🔥#3. ==> Case 3:- Dynamic Array of Objects in Main Container Component and Local Storage using useEffect Hook.
+🔥#3. ==> Case 3:- Now, In order to persist the data, even if the page reloads or new session started. 
 
 ✅#19. As UI of CardContact is repetative, so Design & Build your ContactCard as Component Separately with or without Material UI.
 
@@ -65,29 +67,8 @@
 
 ✅#23. In order to replace the StaticArrayofObjects, we need to declare the state to store the the objects inside the state array as CONTACTS & will be set using Setter Function of setCONTACTS using React useState Hook.
 
-✅#24. Create the State inside the ContactList Class Component to store the name and email of the contact.
+✅#24. Now, we want to populate our contacts state (ArrayofObjects) declared inside the app component by using the AddContact Class Component State Object, then calling the AddContact (Child) Component Data into App (Parent) Component via Function as Props Method. Also, adding the event and calling function for storing data inside the state object.
 
+✅#25. In order to pass the state from child to parent component, then must function as a prop must be passed from parent to child component. This Function as a Prop must be called inside the add function of AddContact Component.
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-✅#24. Passing Data to the App Component, where Function as a Props object.
-✅#25. UseEffect => How to persist the Data inside the Component using localStorage.
+✅#26. UseEffect => How to persist the Data inside the Component using localStorage.
