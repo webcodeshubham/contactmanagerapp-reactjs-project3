@@ -74,8 +74,10 @@
 
 ✅#26. LocalStorage & UseEffect => Now, In order to persist the data, even if the page reloads or new session started. we will use the browser localStorage Memory along with useEffect Hook which is having dependency array as contacts.
 
-✅#27. All useEffects are run for one time at the time of rendering. So initially your contacts state is [] and you are storing it into localStorage. So to solve it, try adding simple if condition check while storing into localStorage.
+✅#27. All useEffects run for one time at the time of rendering. So initially your contacts state is [] and you are storing it into localStorage. So to solve it, try adding simple if condition check while storing into localStorage.
 
 ✅#28. Contact Delete Functionality.
+🔥#1. ==> In order to delete the contact, we must have a unique id. Each child in a list should have a unique "key" prop.
+🔥#2. ==> Install the Package to generate the UUID => uuidv4.
 
-✅🔥⭐️#28. React-Router-DOM Module.
+✅🔥⭐️#29. React-Router-DOM Module.

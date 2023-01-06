@@ -25,7 +25,11 @@ const ContactCard = (props) => {
           </div>
         </div>
         <div className="contactCard__delIcon">
-          <img src={delIcon} alt="del-icon" />
+          <img
+            src={delIcon}
+            alt="del-icon"
+            onClick={() => props.clickHandler(id)}
+          />
         </div>
       </div>
     </>

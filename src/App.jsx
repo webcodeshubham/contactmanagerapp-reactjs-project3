@@ -1,6 +1,7 @@
 // Default Export Module
 import React, { useState, useEffect } from "react";
 import "./App.css";
+import { v4 as uuid } from "uuid";
 import Header from "./components/Header";
 import AddContact from "./components/AddContact";
 import ContactList from "./components/ContactList";
@@ -47,7 +48,14 @@ const App = () => {
     // existing contact objects inside contacts (Arrayof Objects) and new one called from addContact component and spreading using spread operator inside contacts (Arrayof Objects).
     // ...NameofObject(ArrayofObjects)
     // ...contacts = contactObject1, contactObject2, contactObject3,... & also new contact object.
-    setContacts([...contacts, contact]);
+    setContacts([...contacts, { id: uuid(), ...contact }]);
+  };
+
+  const removeContactHandler = (id) => {
+    const newContactList = contacts.filter((contact) => {
+      return contact.id !== id;
+    });
+    setContacts(newContactList);
   };
 
   // run the function snippet, when this hook runs, &whenever dependency array changes.
@@ -70,7 +78,7 @@ const App = () => {
     // StackOverflow Error1 :- https://stackoverflow.com/questions/74993574/localstorage-getitem-method-is-not-retrieving-data
     // All useEffects are run for one time at the time of rendering. So initially your contacts state is [] and you are storing it into localStorage. So to solve it, try adding simple if check while storing into localStorage.
     // https://upmostly.com/tutorials/why-is-my-useeffect-hook-running-twice-in-react
-    
+
     if (contacts.length) {
       // Only store if contacts is not empty
       localStorage.setItem(LOCAL_STORAGE_KEY, JSON.stringify(contacts));
@@ -92,7 +100,7 @@ const App = () => {
 
         {/* <ContactList staticContactList={staticContactList} /> */}
 
-        <ContactList contacts={contacts} />
+        <ContactList contacts={contacts} getContactId={removeContactHandler} />
       </div>
     </>
   );
