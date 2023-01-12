@@ -52,6 +52,7 @@ const ContactList = (props) => {
   //   );
   // });
 
+  // Function as a Prop
   const deleteContactHandler = (id) => {
     props.getContactId(id);
   };

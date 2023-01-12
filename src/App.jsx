@@ -48,11 +48,19 @@ const App = () => {
     // existing contact objects inside contacts (Arrayof Objects) and new one called from addContact component and spreading using spread operator inside contacts (Arrayof Objects).
     // ...NameofObject(ArrayofObjects)
     // ...contacts = contactObject1, contactObject2, contactObject3,... & also new contact object.
+    // Storing Contact Object in Contacts ArrayOfObjects => ...contacts =>
+    // ([ {id: 1, name: "Shubham", email: "shubham@gmail.com"},
+    // {id: 2, name: "Shubh", email: "shubh@gmail.com"},
+    // {id: 3, ...contact (Object Destructing) => name: "hub", email: "hub@gmail.com"} ]).
     setContacts([...contacts, { id: uuid(), ...contact }]);
   };
 
+  //Function as a Prop to getContactId from ContactList
   const removeContactHandler = (id) => {
+    //run and array filter method one by one and store in newContactList Variable.
     const newContactList = contacts.filter((contact) => {
+      // return me all the contact objects, whose id should not match from
+      // the recieved id from contactList Component.
       return contact.id !== id;
     });
     setContacts(newContactList);
@@ -99,7 +107,7 @@ const App = () => {
         {/* Passing the Array of Object and assigning it to Object Prop Variable */}
 
         {/* <ContactList staticContactList={staticContactList} /> */}
-
+        {/* Function as a Prop and get the Contact ID from Contact List Component */}
         <ContactList contacts={contacts} getContactId={removeContactHandler} />
       </div>
     </>
