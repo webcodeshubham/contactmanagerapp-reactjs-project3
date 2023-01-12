@@ -87,6 +87,7 @@ const App = () => {
     // All useEffects are run for one time at the time of rendering. So initially your contacts state is [] and you are storing it into localStorage. So to solve it, try adding simple if check while storing into localStorage.
     // https://upmostly.com/tutorials/why-is-my-useeffect-hook-running-twice-in-react
 
+    // this useEffect will run, but will check the initial value of contacts array. As Initial value is empty, hence it won't set anything. If condition is not given, then it will set empty value in localStorage.
     if (contacts.length) {
       // Only store if contacts is not empty
       localStorage.setItem(LOCAL_STORAGE_KEY, JSON.stringify(contacts));
@@ -108,7 +109,11 @@ const App = () => {
 
         {/* <ContactList staticContactList={staticContactList} /> */}
         {/* Function as a Prop and get the Contact ID from Contact List Component */}
-        <ContactList contacts={contacts} getContactId={removeContactHandler} />
+        <ContactList
+          contacts={contacts}
+          getContactId={removeContactHandler}
+          key={contacts.id}
+        />
       </div>
     </>
   );

@@ -76,11 +76,15 @@
 
 ✅#26. LocalStorage & UseEffect => Now, In order to persist the data, even if the page reloads or new session started. we will use the browser localStorage Memory along with useEffect Hook which is having dependency array as contacts.
 
-✅#27. React.StrictMode is a tool that highlights potential issues in a programme. It works by encapsulating a portion of your full application as a component. StrictMode does not render any visible elements in the DOM in development mode, but it enables checks and gives warnings).
+✅#27. React.StrictMode (React v.18) is a tool that highlights potential issues in a programme. It works by encapsulating a portion of your full application as a component. StrictMode does not render any visible elements in the DOM in development mode, but it enables checks and gives warnings.
 
-✅#28.  All useEffects run for one time at the time of rendering. So initially your contacts state is [] and you are storing an empty array into localStorage. So to solve it, try adding simple if condition check while storing into localStorage.
+✅#28. React.StrictMode (React v.18) will run/mount the main component & its nested components twice i.e. to run the hooks twice. useEffect => Component Mounted => Component Unmounted => Component Mounted Again.
 
-✅#29. All useEffects run for one time at the time of rendering. So initially your contacts state is [] and you are storing an empty array into localStorage. So to solve it, try adding simple if condition check while storing into localStorage.
+✅#29. GETITEM => Initially, useEffect Hook will run twice, it will run twice everytime when the component reloads because of React.StrictMode. Later, it will only change when the dependency array changes.
+
+✅#30. SETITEM => Initially, useEffect Hook will run twice, it will run twice everytime when the component reloads because of React.StrictMode. Here, it will check the length of contacts (ArrayOfObjects). Later, it will only changes when the dependency array changes, when contacts state variable changes & it will check the length of contacts (ArrayOfObjects) & will set it to the LocalStorage. This useEffect will run, but will check the initial value of contacts array. As Initial value is empty, hence it won't set anything. If condition is not given, then it will set empty value in localStorage.
+
+✅#31. All useEffects run for one time at the time of rendering. So initially your contacts state is [] and you are storing an empty array into localStorage. So to solve it, try adding simple if condition check while storing into localStorage.
 
 ✅#30. Contact Delete Functionality.
 🔥#1. ==> In order to delete the contact, we must have a unique id. Each child in a list should have a unique "key" prop.
