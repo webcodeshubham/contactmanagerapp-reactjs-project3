@@ -78,6 +78,6 @@
 
 ✅#28. Contact Delete Functionality.
 🔥#1. ==> In order to delete the contact, we must have a unique id. Each child in a list should have a unique "key" prop.
-🔥#2. ==> Install the Package to generate the UUID => uuidv4.
+🔥#2. ==> Install the Package to generate the UUID => uuidv4
 
 ✅🔥⭐️#29. React-Router-DOM Module.
