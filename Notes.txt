@@ -76,15 +76,17 @@
 
 ✅#26. LocalStorage & UseEffect => Now, In order to persist the data, even if the page reloads or new session started. we will use the browser localStorage Memory along with useEffect Hook which is having dependency array as contacts.
 
-✅#27. Due to React.StrictMode All useEffects run for one time at the time of rendering. So initially your contacts state is [] and you are storing an empty array into localStorage. So to solve it, try adding simple if condition check while storing into localStorage.
+✅#27. React.StrictMode is a tool that highlights potential issues in a programme. It works by encapsulating a portion of your full application as a component. StrictMode does not render any visible elements in the DOM in development mode, but it enables checks and gives warnings).
 
-✅#28. All useEffects run for one time at the time of rendering. So initially your contacts state is [] and you are storing an empty array into localStorage. So to solve it, try adding simple if condition check while storing into localStorage.
+✅#28.  All useEffects run for one time at the time of rendering. So initially your contacts state is [] and you are storing an empty array into localStorage. So to solve it, try adding simple if condition check while storing into localStorage.
 
-✅#28. Contact Delete Functionality.
+✅#29. All useEffects run for one time at the time of rendering. So initially your contacts state is [] and you are storing an empty array into localStorage. So to solve it, try adding simple if condition check while storing into localStorage.
+
+✅#30. Contact Delete Functionality.
 🔥#1. ==> In order to delete the contact, we must have a unique id. Each child in a list should have a unique "key" prop.
 🔥#2. ==> Install & Import the Package alias as uuid() to generate the UUID => uuidv4.
 🔥#3. ==> Declare the id key in object and object destructing of ...contact and set with uuid().
 🔥#4. ==> Function as a Prop to getContactId from removeContactHandler function.
 🔥#5. ==> Function as a Prop to getContactId from deleteContactHandler from ContactList to ContactCard Component function.
 
-✅🔥⭐️#29. React-Router-DOM Module.
+✅🔥⭐️#31. React-Router-DOM Module.
