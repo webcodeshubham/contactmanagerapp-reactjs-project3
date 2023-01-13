@@ -1,7 +1,6 @@
 // import the Structural Class Component from React Module
 import React, { Component } from "react";
 import "../assets/css/AddContact.css";
-import { Link } from "react-router-dom";
 
 class AddContact extends Component {
   // Using class state object and setState Setter function
@@ -75,9 +74,7 @@ class AddContact extends Component {
                 onChange={(e) => this.setState({ email: e.target.value })}
               />
             </div>
-            <Link to="/">
-              <button className="contactForm__button">Add</button>
-            </Link>
+            <button className="contactForm__button">Add</button>
           </form>
         </div>
       </div>

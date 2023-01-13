@@ -104,4 +104,4 @@
 🔥#7. ==> Older Versions => Performance Issue =>  It will create React Element/Component everytime, whenever we reach a url, an anonymous function will create a component using React.create Method. We simply want to update the component, not to recreate the component.
 🔥#8. ==> Use Element to render component inside route which is react router v6.
 🔥#9. ==> In order to pass the prop via Route, we will use a property of render property syntax.
-🔥#10. ==> 
+🔥#10. ==> Use the Navigate to retun to the Component, when clicked on the Button.
