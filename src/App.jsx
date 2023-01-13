@@ -5,6 +5,7 @@ import { v4 as uuid } from "uuid";
 import Header from "./components/Header";
 import AddContact from "./components/AddContact";
 import ContactList from "./components/ContactList";
+import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 
 // Example - 1 => Static Contact Array of Objects
 // const staticContactList = [
@@ -99,21 +100,35 @@ const App = () => {
     <>
       <div className="app">
         {/* Call the Component as Custom HTML Element with Self-Closing or Separate Closing Tag */}
-
-        <Header />
-
-        {/* Error:- You likely to forgot to export your component file it's defined in, or you might have mixed up named or default component. You can't call the Component, if you haven't created them. */}
-        <AddContact addContactHandler={addContactHandler} />
-
-        {/* Passing the Array of Object and assigning it to Object Prop Variable */}
-
-        {/* <ContactList staticContactList={staticContactList} /> */}
-        {/* Function as a Prop and get the Contact ID from Contact List Component */}
-        <ContactList
-          contacts={contacts}
-          getContactId={removeContactHandler}
-          key={contacts.id}
-        />
+        <Router>
+          <Header />
+          {/* Error:- You likely to forgot to export your component file it's defined in, or you might have mixed up named or default component. You can't call the Component, if you haven't created them. */}
+          <Routes>
+            <Route
+              exact
+              path="/add"
+              render={(props) => (
+                <AddContact {...props} addContactHandler={addContactHandler} />
+              )}
+            />
+            {/* <AddContact addContactHandler={addContactHandler} /> */}
+            {/* Passing the Array of Object and assigning it to Object Prop Variable */}
+            {/* <ContactList staticContactList={staticContactList} /> */}
+            {/* Function as a Prop and get the Contact ID from Contact List Component */}
+            <Route
+              exact
+              path="/"
+              render={(props) => (
+                <ContactList
+                  {...props}
+                  contacts={contacts}
+                  getContactId={removeContactHandler}
+                />
+              )}
+            />
+            {/* <ContactList contacts={contacts} getContactId={removeContactHandler} /> */}
+          </Routes>
+        </Router>
       </div>
     </>
   );

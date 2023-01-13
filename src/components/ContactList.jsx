@@ -1,6 +1,8 @@
 import React from "react";
 import "../assets/css/ContactList.css";
+import "../assets/css/AddContact.css";
 import ContactCard from "./ContactCard";
+import { Link } from "react-router-dom";
 
 // Reference Array of Objects for Contacts
 
@@ -57,6 +59,20 @@ const ContactList = (props) => {
     props.getContactId(id);
   };
 
+  // Example - 2 => Static Contact Array of Objects
+  // const contacts = [
+  //   {
+  //     id: 1,
+  //     name: "John Doe",
+  //     email: "johndoe@example.com",
+  //   },
+  //   {
+  //     id: 2,
+  //     name: "Jane Doe",
+  //     email: "jane@example.com",
+  //   },
+  // ];
+
   const renderContactList = props.contacts.map((contact) => {
     return (
       <>
@@ -72,7 +88,19 @@ const ContactList = (props) => {
   return (
     <>
       <div className="contactList">
-        <h2 className="contactList__title">Contact List</h2>
+        <div
+          className="contactList--flex"
+          style={{
+            display: "flex",
+            justifyContent: "space-between",
+            alignItems: "center",
+          }}
+        >
+          <h2 className="contactList__title">Contact List</h2>
+          <Link to="/add">
+            <button className="contactForm__button">Add</button>
+          </Link>
+        </div>
         <div className="contactList__container">
           {/* Calling Reference Variable in JSX, Don't want to Execute the Function */}
           {renderContactList}

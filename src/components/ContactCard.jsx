@@ -7,7 +7,6 @@ import "../assets/css/ContactCard.css";
 const ContactCard = (props) => {
   // object destructing properties
   const { id, name, email } = props.contact;
-
   return (
     <>
       <div className="contactCard">
