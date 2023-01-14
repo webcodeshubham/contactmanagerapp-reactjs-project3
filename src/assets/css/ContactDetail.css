@@ -1,0 +1,29 @@
+/* Default Styling */
+
+* {
+    margin: 0;
+    padding: 0;
+  }
+  
+  /* Contact Detail Stylings */
+
+  .container {
+    width: 100%;
+    padding: 4vw;
+    align-items: center;
+  }
+
+  .contactDetailCard {
+    box-shadow: 1px 1px 20px grey;
+    width: 30%;
+    margin: auto;
+    align-items: center;
+  }
+
+  .contactDetailCard__Img {
+    width: 100%;
+  }
+
+  .contactDetailCard__Details {
+    padding: 1vw 1.5vw;
+  }

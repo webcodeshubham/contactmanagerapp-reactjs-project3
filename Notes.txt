@@ -103,5 +103,11 @@
 🔥#6. ==> Also, Add the Button on the ContactList Component. Use the Link (Anchor HTML Tag) Inbuilt Component to programmatical Navigations among the Components without Page Reloading/Refreshing.
 🔥#7. ==> Older Versions => Performance Issue =>  It will create React Element/Component everytime, whenever we reach a url, an anonymous function will create a component using React.create Method. We simply want to update the component, not to recreate the component.
 🔥#8. ==> Use Element to render component inside route which is react router v6.
-🔥#9. ==> In order to pass the prop via Route, we will use a property of render property syntax.
-🔥#10. ==> Use the Navigate to retun to the Component, when clicked on the Button.
+🔥#9. ==> In order to pass the prop via Route, we will use a property of element/No need to use render property syntax.
+🔥#10. ==> NOT WORKING - ISSUES - Programmatically navigate using React router => Use the Navigate/this.props.history.push("/") to retun to the Component, when clicked on the Button.
+🔥#11. ==> Particular Contact Page => When you click contact details, it will take us to Particular Contact Page.
+
+✅🔥⭐️#34. React AXIOS CRUD with JSON-Server Module.
+🔥#1. ==> reloading/refreshing.
+🔥#2. ==> Install the Node Module Package - React Router DOM Package => npm i react-router-dom --save.
+🔥#3. ==> Setup your Browser Router inside App.jsx Components.

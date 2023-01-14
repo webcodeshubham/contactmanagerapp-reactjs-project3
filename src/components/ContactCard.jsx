@@ -2,6 +2,7 @@ import React from "react";
 import delIcon from "../assets/img/delete-icon.png";
 import userIcon from "../assets/img/user-icon.png";
 import "../assets/css/ContactCard.css";
+import { Link } from "react-router-dom";
 
 // const ContactCard = ({ contact })
 const ContactCard = (props) => {
@@ -18,9 +19,16 @@ const ContactCard = (props) => {
           />
           <div className="contactCard__userName">
             {/* <h2>{contact.name}</h2> */}
-            <h2>{name}</h2>
-            {/* <p>{contact.email}</p> */}
-            <p>{email}</p>
+            <Link
+              to={{
+                pathname: `/contact/${id}`,
+                state: { contact: props.contact },
+              }}
+            >
+              <h2>{name}</h2>
+              {/* <p>{contact.email}</p> */}
+              <p>{email}</p>
+            </Link>
           </div>
         </div>
         <div className="contactCard__delIcon">

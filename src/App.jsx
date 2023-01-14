@@ -5,6 +5,7 @@ import { v4 as uuid } from "uuid";
 import Header from "./components/Header";
 import AddContact from "./components/AddContact";
 import ContactList from "./components/ContactList";
+import ContactDetail from "./components/ContactDetail";
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 
 // Example - 1 => Static Contact Array of Objects
@@ -45,7 +46,7 @@ const App = () => {
   // this will run on line 69 and will take function as a prop handler into AddContact Component.
   // here contact alias as this.state.
   const addContactHandler = (contact) => {
-    console.log(contact);
+    // console.log(contact);
     // existing contact objects inside contacts (Arrayof Objects) and new one called from addContact component and spreading using spread operator inside contacts (Arrayof Objects).
     // ...NameofObject(ArrayofObjects)
     // ...contacts = contactObject1, contactObject2, contactObject3,... & also new contact object.
@@ -107,9 +108,7 @@ const App = () => {
             <Route
               exact
               path="/add"
-              render={(props) => (
-                <AddContact {...props} addContactHandler={addContactHandler} />
-              )}
+              element={<AddContact addContactHandler={addContactHandler} />}
             />
             {/* <AddContact addContactHandler={addContactHandler} /> */}
             {/* Passing the Array of Object and assigning it to Object Prop Variable */}
@@ -118,15 +117,15 @@ const App = () => {
             <Route
               exact
               path="/"
-              render={(props) => (
+              element={
                 <ContactList
-                  {...props}
                   contacts={contacts}
                   getContactId={removeContactHandler}
                 />
-              )}
+              }
             />
             {/* <ContactList contacts={contacts} getContactId={removeContactHandler} /> */}
+            <Route exact path="/contact" element={<ContactDetail />} />
           </Routes>
         </Router>
       </div>

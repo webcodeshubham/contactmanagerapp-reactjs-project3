@@ -1,6 +1,7 @@
 // import the Structural Class Component from React Module
 import React, { Component } from "react";
 import "../assets/css/AddContact.css";
+import { Navigate } from "react-router-dom";
 
 class AddContact extends Component {
   // Using class state object and setState Setter function
@@ -25,9 +26,12 @@ class AddContact extends Component {
     // you can call & access the function inside the function by this.props.nameofHandler(contact)
     this.props.addContactHandler(this.state);
     // Debugging
-    console.log(this.state);
+    // console.log(this.state);
     // Once added, please clear out the fields.
     this.setState({ name: "", email: "" });
+    console.log(this.props);
+    // Programmatically Navigation from One Component to Another Component
+    // this.props.history.push("/");
   };
 
   // render method in class component
@@ -74,7 +78,9 @@ class AddContact extends Component {
                 onChange={(e) => this.setState({ email: e.target.value })}
               />
             </div>
+            {/* <Navigate to="/add"> */}
             <button className="contactForm__button">Add</button>
+            {/* </Navigate> */}
           </form>
         </div>
       </div>
