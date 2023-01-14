@@ -108,6 +108,7 @@
 🔥#11. ==> Particular Contact Page => When you click contact details, it will take us to Particular Contact Page.
 
 ✅🔥⭐️#34. React AXIOS CRUD with JSON-Server Module.
-🔥#1. ==> reloading/refreshing.
-🔥#2. ==> Install the Node Module Package - React Router DOM Package => npm i react-router-dom --save.
-🔥#3. ==> Setup your Browser Router inside App.jsx Components.
+🔥#1. ==> Setup a JSON Server using a React Package Module in order to create our Fake APIs.
+🔥#2. ==> JSON Server follows the RestFul APIs Conventions.
+🔥#3. ==> Install the Node Module Package - JSON Server Package => npm i -g json-server --save.
+🔥#4. ==> Setup your Browser Router inside App.jsx Components.
