@@ -1,12 +1,13 @@
 // Default Export Module
 import React, { useState, useEffect } from "react";
 import "./App.css";
-import { v4 as uuid } from "uuid";
+import { uuid } from "react-uuid";
 import Header from "./components/Header";
 import AddContact from "./components/AddContact";
 import ContactList from "./components/ContactList";
 import ContactDetail from "./components/ContactDetail";
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
+import api from "./api/contacts";
 
 // Example - 1 => Static Contact Array of Objects
 // const staticContactList = [
@@ -42,6 +43,12 @@ const App = () => {
   // Dynamic Contact Array of Objects with initial value as an empty array.
   const [contacts, setContacts] = useState([]);
 
+  // Retrieve Contacts from JSON Server (AXIOS/API)
+  const retrieveContacts = async () => {
+    const response = await api.get("/contacts");
+    return response.data;
+  };
+
   // Passing FunctionHandler as a Prop Attribute to AddContact Component to fetch the class state.
   // this will run on line 69 and will take function as a prop handler into AddContact Component.
   // here contact alias as this.state.
@@ -71,14 +78,20 @@ const App = () => {
   // run the function snippet, when this hook runs, &whenever dependency array changes.
   useEffect(() => {
     // Use the JavaScript function JSON.parse() to convert text into a JavaScript object: const obj = JSON.parse('{"name":"John", "age":30, "city":"New York"}'); Make sure the text is in JSON format, or else you will get a syntax error.
-    const retrieveContacts = JSON.parse(
-      // get all contacts objects from the localStorage database/browser memory.
-      localStorage.getItem(LOCAL_STORAGE_KEY)
-    );
+    // const retrieveContacts = JSON.parse(
+    // get all contacts objects from the localStorage database/browser memory.
+    // localStorage.getItem(LOCAL_STORAGE_KEY)
+    // );
     // if the data exits in the localStorage database, then set the contacts objects to contacts state variable.
-    if (retrieveContacts) {
-      setContacts(retrieveContacts);
-    }
+    // if (retrieveContacts) {
+    // setContacts(retrieveContacts);
+    // }
+
+    const getAllContacts = async () => {
+      const allContacts = await retrieveContacts();
+      if (allContacts) setContacts(allContacts);
+    };
+    getAllContacts();
   }, []);
 
   // run the function snippet, when this hook runs, &whenever dependency array changes.
