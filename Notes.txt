@@ -110,5 +110,5 @@
 ✅🔥⭐️#34. React AXIOS CRUD with JSON-Server Module.
 🔥#1. ==> Setup a JSON Server using a React Package Module in order to create our Fake APIs.
 🔥#2. ==> JSON Server follows the RestFul APIs Conventions.
-🔥#3. ==> Install the Node Module Package - JSON Server Package => npm i -g json-server --save.
-🔥#4. ==> Setup your Browser Router inside App.jsx Components.
+🔥#3. ==> Init Package JSON File (npm init --yes). Install the Node Module Package - JSON Server Package => npm i -g json-server --save.
+🔥#4. ==> What is Rest API Conventions => Create a Resource on Contacts, Perform CRUD Operations with different Endpoints. It means creating a backend for data.
