@@ -92,7 +92,7 @@
 🔥#3. ==> Declare the id key in object and object destructing of ...contact and set with uuid().
 🔥#4. ==> Function as a Prop to getContactId from removeContactHandler function.
 🔥#5. ==> Function as a Prop to getContactId from deleteContactHandler from ContactList to ContactCard Component function.
-🔥#6. ==> To be Continued.
+🔥#6. ==> Use the uuidv4 function in AddContact Component to generate the UUID. Delete the functionality from App.jsx & style the clicking text.
 
 ✅🔥⭐️#33. React-Router-DOM Module.
 🔥#1. ==> React Router Package helps us to navigate between the different components, help us to define different urls paths and their components as view, modifies the browser history, maintains the page ui without reloading/refreshing.
