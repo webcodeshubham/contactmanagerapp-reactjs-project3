@@ -138,12 +138,13 @@ const App = () => {
               }
             />
             {/* <ContactList contacts={contacts} getContactId={removeContactHandler} /> */}
-            <Route exact path="/contact" element={<ContactDetail />} />
+            {/* <Route exact path="/contact/:id" element={<ContactDetail />} /> */}
           </Routes>
         </Router>
       </div>
     </>
   );
 };
+
 
 export default App;

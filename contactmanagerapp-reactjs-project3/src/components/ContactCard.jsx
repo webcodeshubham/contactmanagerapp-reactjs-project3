@@ -20,11 +20,10 @@ const ContactCard = (props) => {
           <div className="contactCard__userName">
             {/* <h2>{contact.name}</h2> */}
             <Link
-              // to={{
-              //   pathname: `/contact/${id}`,
-              //   state: { contact: props.contact },
-              // }}
-              to="/contact/"
+              to={{
+                pathname: `/contact/${id}`,
+                state: { contact: props.contact },
+              }}
               style={{ textDecoration: "none", color: "black" }}
             >
               <h2>{name}</h2>

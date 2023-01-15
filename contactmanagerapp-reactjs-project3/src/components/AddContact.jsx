@@ -3,6 +3,7 @@ import React, { Component } from "react";
 import "../assets/css/AddContact.css";
 import { Navigate } from "react-router-dom";
 import { v4 as uuid } from "uuid";
+import { createBrowserHistory } from "history";
 
 class AddContact extends Component {
   // Using class state object and setState Setter function
@@ -29,11 +30,11 @@ class AddContact extends Component {
     // Debugging
     // console.log(this.state);
     // Once added, please clear out the fields.
-    this.setState({ id: "", name: "", email: "" });
-    console.log(this.props);
+    this.setState({ name: "", email: "" });
+    console.log(this);
     // Programmatically Navigation from One Component to Another Component
-    const navigate = Navigate()
-    this.props.navigate("/");
+    const navigate = Navigate();
+    this.props.history.push("/");
   };
 
   // render method in class component
