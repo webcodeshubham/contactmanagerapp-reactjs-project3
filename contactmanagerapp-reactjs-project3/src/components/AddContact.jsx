@@ -1,6 +1,7 @@
 import React, { useState } from "react";
 import "../assets/css/AddContact.css";
 import { v4 as uuid } from "uuid";
+import { useNavigate } from "react-router-dom";
 
 const AddContact = (props) => {
   const [id, setId] = useState(uuid());
@@ -11,6 +12,8 @@ const AddContact = (props) => {
     name: name,
     email: email,
   };
+
+  const navigate = useNavigate();
   const add = (e) => {
     e.preventDefault();
     if (name === "" || email === "") {
@@ -20,6 +23,8 @@ const AddContact = (props) => {
     props.addContactHandler(contact);
     setName("");
     setEmail("");
+    console.log(props);
+    navigate("/");
   };
 
   return (
