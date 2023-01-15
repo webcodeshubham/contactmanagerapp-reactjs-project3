@@ -1,9 +1,11 @@
 // import the Structural Class Component from React Module
 import React, { Component } from "react";
 import "../assets/css/AddContact.css";
-import { Navigate } from "react-router-dom";
+// import { useNavigate } from "react-router-dom";
 import { v4 as uuid } from "uuid";
-import { createBrowserHistory } from "history";
+// import history from "history";
+// import { hashHistory } from "react-router";
+import { withRouter } from "react-router";
 
 class AddContact extends Component {
   // Using class state object and setState Setter function
@@ -33,8 +35,10 @@ class AddContact extends Component {
     this.setState({ name: "", email: "" });
     console.log(this);
     // Programmatically Navigation from One Component to Another Component
-    const navigate = Navigate();
+    // const navigate = useNavigate();
     this.props.history.push("/");
+    // hashHistory.push('/');
+    // Navigate('/')
   };
 
   // render method in class component
@@ -91,4 +95,4 @@ class AddContact extends Component {
   }
 }
 
-export default AddContact;
+export default withRouter(AddContact);
