@@ -1,0 +1,79 @@
+/* Default Styling */
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+/* AddContact Stylings */
+
+.contactForm {
+  padding: 0.2vw 2vw;
+}
+
+.contactForm__title {
+  font-size: 2.6vw;
+  font-family: Impact, Haettenschweiler, "Arial Narrow Bold", sans-serif;
+  color: cadetblue;
+}
+
+.contactForm__form {
+  padding: 1vw 2vw;
+}
+
+.contactForm__nameField {
+  width: 40vw;
+  margin-bottom: 1vw;
+}
+
+.contactForm__nameField label {
+  font-size: 1.8vw;
+  font-weight: 800;
+  font-family: Impact, Haettenschweiler, "Arial Narrow Bold", sans-serif;
+}
+
+.contactForm__nameField input {
+  width: 40vw;
+  padding: 0.6vw 2vw;
+  margin: 0.5vw 0;
+  font-size: 1.3vw;
+  outline: none;
+}
+
+.contactForm__emailField {
+  width: 40vw;
+}
+
+.contactForm__emailField label {
+  font-size: 1.8vw;
+  font-weight: 800;
+  font-family: Impact, Haettenschweiler, "Arial Narrow Bold", sans-serif;
+}
+
+.contactForm__emailField input {
+  width: 40vw;
+  padding: 0.6vw 2vw;
+  margin: 0.5vw 0;
+  font-size: 1.3vw;
+  outline: none;
+}
+
+.contactForm__button {
+  width: 10vw;
+  margin: 1.5vw 0;
+  padding: 0.8vw 2vw;
+  font-size: 1.2vw;
+  font-weight: 900;
+  border-radius: 10px;
+  cursor: pointer;
+  border: none;
+  font-family: Impact, Haettenschweiler, "Arial Narrow Bold", sans-serif;
+  letter-spacing: 1px;
+  background-color: cadetblue;
+  transition: all 0.5s ease-in-out;
+}
+
+.contactForm__button:hover {
+  background-color: black;
+  color: cadetblue;
+}

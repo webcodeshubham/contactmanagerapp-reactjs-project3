@@ -1,6 +1,7 @@
 import React from "react";
 import delIcon from "../assets/img/delete-icon.png";
 import userIcon from "../assets/img/user-icon.png";
+import editIcon from "../assets/img/edit-icon.png";
 import "../assets/css/ContactCard.css";
 import { Link } from "react-router-dom";
 
@@ -32,12 +33,28 @@ const ContactCard = (props) => {
             </Link>
           </div>
         </div>
-        <div className="contactCard__delIcon">
-          <img
-            src={delIcon}
-            alt="del-icon"
-            onClick={() => props.clickHandler(id)}
-          />
+        <div className="btns">
+          <Link
+            to={{
+              pathname: `/edit`,
+              state: { contact: props.contact },
+            }}
+          >
+          <div className="contactCard__editIcon">
+            <img
+              src={editIcon}
+              alt="edit-icon"
+              onClick={() => props.clickHandler(id)}
+            />
+          </div>
+          </Link>
+          <div className="contactCard__delIcon">
+            <img
+              src={delIcon}
+              alt="del-icon"
+              onClick={() => props.clickHandler(id)}
+            />
+          </div>
         </div>
       </div>
     </>

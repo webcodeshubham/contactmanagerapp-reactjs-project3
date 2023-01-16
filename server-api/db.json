@@ -1,17 +1,16 @@
 {
   "Contacts": [
-    { "id": "", "name": "Shubham", "email": "Shubham@s.com" },
-    { "id": "", "name": "Shubham", "email": "Shubham@s.com" },
-    { "id": "", "name": "Hello", "email": "Shubham@s.com" },
-    { "id": "", "name": "Shubham", "email": "Shubham@s.com" },
-    { "id": "", "name": "Shubham", "email": "Shubham@s.com" },
-    { "id": "", "name": "Shubham", "email": "Shubham@s.com" },
-    { "id": "", "name": "Shubham", "email": "Shubham@s.com" },
-    { "id": "", "name": "Hello", "email": "he@jsafj.com" },
-    { "id": "", "name": "Shubham", "email": "Shubham@s.com" },
-    { "id": "", "name": "Shubham", "email": "Shubham@s.com" },
-    { "id": "", "name": "Shubham", "email": "Shubham@s.com" },
-    { "id": "", "name": "Shubham", "email": "Shubham@s.com" },
-    { "id": "", "name": "Shubham", "email": "he@jsafj.com" }
+    
+    {
+      "id": "",
+      "name": "Shubham",
+      "email": "Shubham@s.com"
+    },
+    {
+      "id": "",
+      "name": "Hello",
+      "email": "he@jsafj.com"
+    }
+   
   ]
 }
